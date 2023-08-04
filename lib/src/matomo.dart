@@ -149,6 +149,11 @@ class MatomoTracker {
 
   MatomoAction? _lastPageView;
 
+  /// Reset initialization state.
+  void reset() {
+    _initialized = false;
+  }
+
   /// Initialize the tracker.
   ///
   /// This method must be called before any other method. Otherwise they might
