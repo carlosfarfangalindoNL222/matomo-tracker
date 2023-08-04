@@ -199,9 +199,6 @@ class MatomoTracker {
     String? userAgent,
     bool attachLastScreenInfo = true,
   }) async {
-    if (_initialized) {
-      throw const AlreadyInitializedMatomoInstanceException();
-    }
 
     if (visitorId != null && visitorId.length != 16) {
       throw ArgumentError.value(
